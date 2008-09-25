@@ -1,0 +1,5 @@
+ORIG_PN="Pygments"
+inherit distutils
+
+DESCRIPTION="Pure Python syntax highlighting module"
+HOMEPAGE="http://pygments.org/"
