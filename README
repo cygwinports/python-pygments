@@ -6,11 +6,11 @@ as forum systems, wikis or other applications that need to prettify
 source code.
 
 Runtime requirements:
-  python-2.5.2-3
+  python-2.5.2-4
 
 Build requirements:
-  cygport-0.4.0-1
-  python-2.5.2-3
+  cygport-0.4.3-1
+  python-2.5.2-4
 
 Canonical website:
   http://pygments.org/
@@ -21,27 +21,27 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack python-pygments-0.11.1-X-src.tar.bz2
+  unpack python-pygments-1.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./python-pygments-0.11.1-X.cygport all
+  cygport ./python-pygments-1.0-X.cygport all
 
 This will create:
-  /usr/src/python-pygments-0.11.1-X-src.tar.bz2
-  /usr/src/python-pygments-0.11.1-X.tar.bz2
+  /usr/src/python-pygments-1.0-X-src.tar.bz2
+  /usr/src/python-pygments-1.0-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
   /usr/bin/pygmentize
-  /usr/lib/python2.5/site-packages/Pygments-0.11.1-py2.5.egg-info/PKG-INFO
-  /usr/lib/python2.5/site-packages/Pygments-0.11.1-py2.5.egg-info/SOURCES.txt
-  /usr/lib/python2.5/site-packages/Pygments-0.11.1-py2.5.egg-info/dependency_links.txt
-  /usr/lib/python2.5/site-packages/Pygments-0.11.1-py2.5.egg-info/entry_points.txt
-  /usr/lib/python2.5/site-packages/Pygments-0.11.1-py2.5.egg-info/not-zip-safe
-  /usr/lib/python2.5/site-packages/Pygments-0.11.1-py2.5.egg-info/top_level.txt
+  /usr/lib/python2.5/site-packages/Pygments-1.0-py2.5.egg-info/PKG-INFO
+  /usr/lib/python2.5/site-packages/Pygments-1.0-py2.5.egg-info/SOURCES.txt
+  /usr/lib/python2.5/site-packages/Pygments-1.0-py2.5.egg-info/dependency_links.txt
+  /usr/lib/python2.5/site-packages/Pygments-1.0-py2.5.egg-info/entry_points.txt
+  /usr/lib/python2.5/site-packages/Pygments-1.0-py2.5.egg-info/not-zip-safe
+  /usr/lib/python2.5/site-packages/Pygments-1.0-py2.5.egg-info/top_level.txt
   /usr/lib/python2.5/site-packages/pygments/__init__.py
   /usr/lib/python2.5/site-packages/pygments/__init__.pyc
   /usr/lib/python2.5/site-packages/pygments/__init__.pyo
@@ -198,6 +198,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/pygments/styles/perldoc.py
   /usr/lib/python2.5/site-packages/pygments/styles/perldoc.pyc
   /usr/lib/python2.5/site-packages/pygments/styles/perldoc.pyo
+  /usr/lib/python2.5/site-packages/pygments/styles/tango.py
+  /usr/lib/python2.5/site-packages/pygments/styles/tango.pyc
+  /usr/lib/python2.5/site-packages/pygments/styles/tango.pyo
   /usr/lib/python2.5/site-packages/pygments/styles/trac.py
   /usr/lib/python2.5/site-packages/pygments/styles/trac.pyc
   /usr/lib/python2.5/site-packages/pygments/styles/trac.pyo
@@ -216,14 +219,17 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/pygments/util.py
   /usr/lib/python2.5/site-packages/pygments/util.pyc
   /usr/lib/python2.5/site-packages/pygments/util.pyo
-  /usr/share/doc/python-pygments-0.11.1/AUTHORS
-  /usr/share/doc/python-pygments-0.11.1/Changes
-  /usr/share/doc/python-pygments-0.11.1/LICENSE
-  /usr/share/doc/python-pygments-0.11.1/TODO
+  /usr/share/doc/python-pygments-1.0/AUTHORS
+  /usr/share/doc/python-pygments-1.0/Changes
+  /usr/share/doc/python-pygments-1.0/LICENSE
+  /usr/share/doc/python-pygments-1.0/TODO
 
 ------------------
 
 Port Notes:
+
+----- version 1.0-1 -----
+Version bump.
 
 ----- version 0.11.1-1 -----
 Initial release for Cygwin.
