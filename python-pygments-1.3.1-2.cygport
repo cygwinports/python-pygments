@@ -1,9 +1,5 @@
 ORIG_PN="Pygments"
-inherit distutils-multi
+inherit python-distutils
 
 DESCRIPTION="Pure Python syntax highlighting module"
 HOMEPAGE="http://pygments.org/"
-
-PKG_NAMES="python-pygments python3-pygments"
-python_pygments_CONTENTS="usr/bin/ ${PYTHON_SITELIB#/} usr/share/doc/"
-python3_pygments_CONTENTS=${PYTHON3_SITELIB#/}
