@@ -2,7 +2,7 @@ ORIG_PN="Pygments"
 inherit python-wheel
 
 NAME="python-pygments"
-VERSION=2.2.0
+VERSION=2.3.1
 RELEASE=1
 CATEGORY="Python"
 SUMMARY="Python syntax highlighting module"
@@ -14,7 +14,8 @@ HOMEPAGE="http://pygments.org/"
 
 ARCH=noarch
 
-python2_pygments_REQUIRES="python2-chardet python2-imaging"
-python3_pygments_REQUIRES="python3-chardet python3-imaging"
-python3_pygments_CONTENTS="usr/bin/pygmentize ${python3_pygments_CONTENTS}"
-REQUIRES_EXCLUDE_FROM="${PYTHON2_SITELIB}/pygments/sphinxext.py:${PYTHON3_SITELIB}/pygments/sphinxext.py"
+python27_pygments_REQUIRES="python27-chardet python27-imaging"
+python36_pygments_REQUIRES="python36-chardet python36-imaging"
+python37_pygments_REQUIRES="python37-chardet python37-imaging"
+python37_pygments_CONTENTS+=" usr/bin/pygmentize"
+REQUIRES_EXCLUDE_FROM="*/pygments/sphinxext.py"
